@@ -1,0 +1,2598 @@
+
+
+
+
+
+
+
+======================================================
+               Program Number: 7
+               Programmer: Tobias
+               PCC Course Number: CS227
+======================================================
+This program demonstrates various search algorithms.
+You enter in any whole number, and the program will
+search for it in an ORDERED array of whole numbers
+using each of the following search algorithms:
+     1. Ordered Sequential Search
+     2. Probability Search
+     3. Binary Search
+The progress of each search is shown so the efficiency
+of the search algorithms can be compared.
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:   1
+   Search Path: [ 0]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:   1
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:   1
+   Search Path: [ 7][ 3][ 1][ 0]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:   9
+   Search Path: [ 0]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:   9
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:   9
+   Search Path: [ 7][ 3][ 1][ 0]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  10
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  10
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  10
+   Search Path: [ 7][ 3][ 1][ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  11
+   Search Path: [ 0][ 1]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  11
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  11
+   Search Path: [ 7][ 3][ 1][ 0]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  13
+   Search Path: [ 0][ 1]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  13
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  13
+   Search Path: [ 7][ 3][ 1][ 0]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  25
+   Search Path: [ 0][ 1][ 2][ 3]
+Search Outcome: Successful - target found at index [ 3]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  25
+   Search Path: [ 0][ 1][ 2][ 3]
+Search Outcome: Successful - target found at index [ 2]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  25
+   Search Path: [ 7][ 3]
+Search Outcome: Successful - target found at index [ 3]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  24
+   Search Path: [ 0][ 1][ 2][ 3]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  24
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  24
+   Search Path: [ 7][ 3][ 1][ 2]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  27
+   Search Path: [ 0][ 1][ 2][ 3][ 4]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  27
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  27
+   Search Path: [ 7][ 3][ 5][ 4]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  31
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  31
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  31
+   Search Path: [ 7][ 3][ 5][ 4]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 4]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  30
+   Search Path: [ 0][ 1][ 2][ 3][ 4]
+Search Outcome: Successful - target found at index [ 4]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  35  30  40  45  50  55  60  65  70  75  80
+   User Target:  30
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 4]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  30
+   Search Path: [ 7][ 3][ 5][ 4]
+Search Outcome: Successful - target found at index [ 4]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  40
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6]
+Search Outcome: Successful - target found at index [ 6]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  40
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6]
+Search Outcome: Successful - target found at index [ 5]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  40
+   Search Path: [ 7][ 3][ 5][ 6]
+Search Outcome: Successful - target found at index [ 6]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  45
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7]
+Search Outcome: Successful - target found at index [ 7]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  40  35  45  50  55  60  65  70  75  80
+   User Target:  45
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7]
+Search Outcome: Successful - target found at index [ 6]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  45
+   Search Path: [ 7]
+Search Outcome: Successful - target found at index [ 7]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  37
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  40  45  35  50  55  60  65  70  75  80
+   User Target:  37
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  37
+   Search Path: [ 7][ 3][ 5][ 6]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  76
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  40  45  35  50  55  60  65  70  75  80
+   User Target:  76
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  76
+   Search Path: [ 7][11][13][14]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  77
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  40  45  35  50  55  60  65  70  75  80
+   User Target:  77
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  77
+   Search Path: [ 7][11][13][14]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  78
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  40  45  35  50  55  60  65  70  75  80
+   User Target:  78
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  78
+   Search Path: [ 7][11][13][14]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  79
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  40  45  35  50  55  60  65  70  75  80
+   User Target:  79
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  79
+   Search Path: [ 7][11][13][14]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  80
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Successful - target found at index [14]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  40  45  35  50  55  60  65  70  75  80
+   User Target:  80
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Successful - target found at index [13]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  80
+   Search Path: [ 7][11][13][14]
+Search Outcome: Successful - target found at index [14]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  81
+   Search Path: [14]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  40  45  35  50  55  60  65  70  80  75
+   User Target:  81
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  81
+   Search Path: [ 7][11][13][14]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  15
+   Search Path: [ 0][ 1]
+Search Outcome: Successful - target found at index [ 1]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  25  20  30  40  45  35  50  55  60  65  70  80  75
+   User Target:  15
+   Search Path: [ 0][ 1]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  15
+   Search Path: [ 7][ 3][ 1]
+Search Outcome: Successful - target found at index [ 1]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  -20
+   Search Path: [ 0]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  20  30  40  45  35  50  55  60  65  70  80  75
+   User Target:  -20
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  -20
+   Search Path: [ 7][ 3][ 1][ 0]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  20  30  40  45  35  50  55  60  65  70  80  75
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7]
+Search Outcome: Successful - target found at index [ 6]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  20  30  40  35  45  50  55  60  65  70  80  75
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6]
+Search Outcome: Successful - target found at index [ 5]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  20  30  35  40  45  50  55  60  65  70  80  75
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 4]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  20  35  30  40  45  50  55  60  65  70  80  75
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4]
+Search Outcome: Successful - target found at index [ 3]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  40
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6]
+Search Outcome: Successful - target found at index [ 6]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  30  40  45  50  55  60  65  70  80  75
+   User Target:  40
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6]
+Search Outcome: Successful - target found at index [ 5]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  40
+   Search Path: [ 7][ 3][ 5][ 6]
+Search Outcome: Successful - target found at index [ 6]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  36
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  36
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  36
+   Search Path: [ 7][ 3][ 5][ 6]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  34
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  34
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  34
+   Search Path: [ 7][ 3][ 5][ 4]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  86
+   Search Path: [14]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  86
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  86
+   Search Path: [ 7][11][13][14]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  43
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  43
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  43
+   Search Path: [ 7][ 3][ 5][ 6]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  34
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  34
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  34
+   Search Path: [ 7][ 3][ 5][ 4]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  76
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  76
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  76
+   Search Path: [ 7][11][13][14]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  54
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  54
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  54
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  32
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  32
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  32
+   Search Path: [ 7][ 3][ 5][ 4]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  67
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  67
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  67
+   Search Path: [ 7][11][13][12]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  90
+   Search Path: [14]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  90
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  90
+   Search Path: [ 7][11][13][14]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  45
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7]
+Search Outcome: Successful - target found at index [ 7]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  30  45  50  55  60  65  70  80  75
+   User Target:  45
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7]
+Search Outcome: Successful - target found at index [ 6]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  45
+   Search Path: [ 7]
+Search Outcome: Successful - target found at index [ 7]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  23
+   Search Path: [ 0][ 1][ 2][ 3]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  45  30  50  55  60  65  70  80  75
+   User Target:  23
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  23
+   Search Path: [ 7][ 3][ 1][ 2]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  45
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7]
+Search Outcome: Successful - target found at index [ 7]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  40  45  30  50  55  60  65  70  80  75
+   User Target:  45
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6]
+Search Outcome: Successful - target found at index [ 5]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  45
+   Search Path: [ 7]
+Search Outcome: Successful - target found at index [ 7]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  32
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  45  40  30  50  55  60  65  70  80  75
+   User Target:  32
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  32
+   Search Path: [ 7][ 3][ 5][ 4]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  51
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9]
+Search Outcome: Unsuccessful - target not found
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  45  40  30  50  55  60  65  70  80  75
+   User Target:  51
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+Search Outcome: Unsuccessful - target not found
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  51
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Unsuccessful - target not found
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  45  40  30  50  55  60  65  70  80  75
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 7]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  45  40  50  30  55  60  65  70  80  75
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7]
+Search Outcome: Successful - target found at index [ 6]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  45  50  40  30  55  60  65  70  80  75
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6]
+Search Outcome: Successful - target found at index [ 5]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  20  50  45  40  30  55  60  65  70  80  75
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 4]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  35  50  20  45  40  30  55  60  65  70  80  75
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4]
+Search Outcome: Successful - target found at index [ 3]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  50  35  20  45  40  30  55  60  65  70  80  75
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+Search Outcome: Successful - target found at index [ 9]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 7][11][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  25  50  35  20  45  40  30  60  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3]
+Search Outcome: Successful - target found at index [ 2]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  10  50  25  35  20  45  40  30  60  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0][ 1][ 2]
+Search Outcome: Successful - target found at index [ 1]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  15  50  10  25  35  20  45  40  30  60  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0][ 1]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  40  30  60  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  40  30  60  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  40  30  60  55  65  70  80  75
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9]
+Search Outcome: Successful - target found at index [ 8]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 7][11][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  40  60  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  40  60  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  40  60  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  40  60  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  40  60  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  40  60  30  55  65  70  80  75
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 7]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 7][11][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  60  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  60  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  60  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  60  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  60  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  45  60  40  30  55  65  70  80  75
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7]
+Search Outcome: Successful - target found at index [ 6]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 7][11][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  60  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  60  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  60  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  60  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  60  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  20  60  45  40  30  55  65  70  80  75
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6]
+Search Outcome: Successful - target found at index [ 5]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 7][11][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  60  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  60  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  60  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  60  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  60  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  35  60  20  45  40  30  55  65  70  80  75
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 4]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 7][11][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  60  35  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  60  35  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  60  35  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  60  35  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  60  35  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  25  60  35  20  45  40  30  55  65  70  80  75
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4]
+Search Outcome: Successful - target found at index [ 3]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 7][11][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  60  25  35  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  60  25  35  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  60  25  35  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  60  25  35  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  60  25  35  20  45  40  30  55  65  70  80  75
+   User Target:  50
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  50
+   Search Path: [ 7][11][ 9][ 8]
+Search Outcome: Successful - target found at index [ 8]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  10  60  25  35  20  45  40  30  55  65  70  80  75
+   User Target:  60
+   Search Path: [ 0][ 1][ 2][ 3]
+Search Outcome: Successful - target found at index [ 2]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  60
+   Search Path: [ 7][11][ 9][10]
+Search Outcome: Successful - target found at index [10]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  60  10  25  35  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 4]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  60  10  35  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4]
+Search Outcome: Successful - target found at index [ 3]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  60  35  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3]
+Search Outcome: Successful - target found at index [ 2]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  15  35  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0][ 1][ 2]
+Search Outcome: Successful - target found at index [ 1]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  50  35  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0][ 1]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+
+Ordered Sequential Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 0][ 1][ 2][ 3][ 4][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+Probability Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  35  50  15  60  10  25  20  45  40  30  55  65  70  80  75
+   User Target:  35
+   Search Path: [ 0]
+Search Outcome: Successful - target found at index [ 0]
+
+Binary Search:
+   Array Index: [ 0][ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10][11][12][13][14]
+    Array Data:  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80
+   User Target:  35
+   Search Path: [ 7][ 3][ 5]
+Search Outcome: Successful - target found at index [ 5]
+
+
+Enter an integer search target (0 to quit): 
+Thanks for searching.  Have a nice day! ;-)
+
+
+
+
+
