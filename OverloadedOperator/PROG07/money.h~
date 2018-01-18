@@ -1,0 +1,287 @@
+//**********************************************************************
+//*                                                                    *
+//* Header Name:  money.h - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx *
+//* Author:       Ben Tobias                                           *
+//* Installation: Pensacola Christian College, Pensacola, Florida      *
+//* Course:       CS246, Object-Oriented Programming and Design        *
+//* Date Written: April 14, 2010                                       *
+//*                                                                    *
+//**********************************************************************
+
+#include <iostream>
+#include "stdafx.h"
+using namespace std;
+
+//**********************************************************************
+//*                           Program Class                            *
+//**********************************************************************
+// Money class
+class money
+{
+   int cents,   // The cents part in amount of money
+       dollars; // The decimal dollars part in amount of money
+public: 
+   // Constructors
+         money      ()             {dollars = 0; cents = 0; }
+         money      (float amount) {set_dollars(amount); 
+                                    set_cents(amount);      }
+
+   // Set the member variables
+   void  set_dollars(float amount) {dollars = (int) amount; }
+   void  set_cents  (float amount);
+
+   // Get the member variables
+   float get_total  ()             {return (float) dollars + 
+                                    ((float) cents * 0.01f);}
+   int   get_dollars()             {return dollars;    } // DELETE LATER
+   int   get_cents  ()             {return cents;      } // DELETE LATER
+
+   // Overloaded Operators
+   money operator=  (money object2  );
+   money operator+  (money object2  );
+   money operator-  (money object2  );
+   money operator*  (money object2  );
+   money operator/  (money object2  );
+   money operator+= (money object2  );
+   int   operator== (money object2  );
+   int   operator!= (money object2  );
+   money operator<< (int   shift    );
+   money operator>> (int   shift    );
+   money operator++ (               );
+   money operator++ (int   not_used );
+};
+  
+//**********************************************************************
+//*                           Set cents                                *
+//**********************************************************************
+void money::set_cents  (float amount)
+{
+   cout << "\n\nIn money.h, amount enter the set_cents()";
+   cout << "\n I'm recieve the amount: " << amount;
+
+   if (amount < 0.00f)
+   {
+      cout << "\nThe amount is less than 0.00f";
+      cout << "\namount subtracted from " << amount;
+      amount -= (int) amount;
+      cout << " to " << amount;
+      cout << "\nand then, add 0.005 from " << amount;
+      amount -= 0.005f;
+      cout << " to " << amount;
+   }
+   else
+   {
+      cout << "\nThe amount is more than 0.00f";
+      cout << "\namount subtracted from " << amount;
+      amount -= (int) amount;
+      cout << " to " << amount;
+      cout << "\nand then, subtract 0.005 from " << amount;
+      amount +=  0.005f;
+      cout << " to " << amount;
+   }
+
+   cout << "\nThen multiplied from " << amount;
+   amount *= 100.0f;
+   cout << " to " << amount;
+
+   cents = (int) amount;
+   cout << "\n finally, the cents is " << cents;
+   return;
+}
+
+//**********************************************************************
+//*                   Overloaded Assignment Operator                   *
+//**********************************************************************
+money money::operator= (money object2)
+{
+   dollars = object2.dollars;
+   cents   = object2.cents;
+
+   return *this;
+}
+
+//**********************************************************************
+//*                      Overloaded Sum Operator                       *
+//**********************************************************************
+money money::operator+ (money object2)
+{
+   money sum;
+
+   sum.dollars = dollars + object2.dollars;
+   sum.cents  =  cents  + object2.cents;
+
+   if (sum.cents > 99)
+   {
+      sum.cents   -= 100;
+      sum.dollars += 1;
+   }
+   else if (sum.cents < -99)
+   {
+      sum.cents   += 100;
+      sum.dollars -= 1;
+   }
+
+   return sum;
+}
+
+//**********************************************************************
+//*                     Overloaded Minus Operator                      *
+//**********************************************************************
+money money::operator- (money object2)
+{
+   money subtract;
+
+   subtract.dollars = dollars - object2.dollars;
+   subtract.cents  = cents  - object2.cents;
+
+   if (subtract.cents > 99)
+   {
+      subtract.cents   -= 100;
+      subtract.dollars += 1;
+   }
+   else if (subtract.cents < 0)
+   {
+      subtract.cents   += 100;
+      subtract.dollars -= 1;
+   }
+
+   return subtract;
+}
+
+//**********************************************************************
+//*                 Overloaded Multiplication Operator                 *
+//**********************************************************************
+money money::operator* (money object2)
+{
+   money multiply;
+
+   multiply.dollars = dollars * object2.dollars;
+   multiply.cents   = cents   * object2.cents;
+
+   return multiply;
+}
+
+//**********************************************************************
+//*                    Overloaded Division Operator                    *
+//**********************************************************************
+money money::operator/ (money object2)
+{
+   money division;
+
+   if (object2.dollars == 0 && object2.cents == 0)
+   {
+      cout << "\nWarning: A divide by 0.00 operation cannot be done!";
+      cout << "\nThe result of this operation is being set to 0.00!";
+      division.dollars = 0;
+      division.cents   = 0;
+   }
+   else if (object2.dollars == 0)
+   {
+      division.dollars = 0;
+      division.cents   = cents   / object2.cents;
+   }
+   else if (object2.cents == 0)
+   {
+      division.dollars = dollars / object2.dollars;
+      division.cents   = 0;
+   }
+   else
+   {
+      division.dollars = dollars / object2.dollars;
+      division.cents   = cents   / object2.cents;
+   }
+
+   return division;
+}
+
+//**********************************************************************
+//*                  Overloaded Shorthand Sum Operator                 *
+//**********************************************************************
+money money::operator+=(money object2)
+{
+   dollars += object2.dollars;
+   cents   += object2.cents;
+
+   if (cents > 99)
+   {
+      cents   -= 100;
+      dollars += 1;
+   }
+   else if (cents < 0)
+   {
+      cents   += 100;
+      dollars -= 1;
+   }
+
+   return *this;
+}
+
+//**********************************************************************
+//*                     Overloaded == ?? Operator                      *
+//**********************************************************************
+int money::operator==(money object2)
+{
+   if (dollars == object2.dollars || cents == object2.cents)
+      return 1;
+   else
+      return 0;
+}
+
+//**********************************************************************
+//*                     Overloaded != ?? Operator                      *
+//**********************************************************************
+int money::operator!=(money object2)
+{
+   if (dollars != object2.dollars || cents != object2.cents)
+      return 1;
+   else
+      return 0;
+}
+
+//**********************************************************************
+//*                   Overloaded Left Shift Operator                   *
+//**********************************************************************
+money money::operator<<(int shift)
+{
+   dollars = dollars << shift;
+   cents   = cents   << shift;
+
+   return *this;
+}
+
+//**********************************************************************
+//*                  Overloaded Right Shift Operator                   *
+//**********************************************************************
+money money::operator>>(int shift)
+{
+   dollars = dollars >> shift;
+   cents   = cents   >> shift;
+
+   return *this;
+}
+
+//**********************************************************************
+//*                Overloaded Prefix Increment Operator                *
+//**********************************************************************
+money money::operator++()
+{
+   money prefix;
+
+   prefix.dollars = dollars + 1;
+   prefix.cents   = cents;  
+
+   return prefix;
+}
+
+//**********************************************************************
+//*               Overloaded Postfix Increment Operator                *
+//**********************************************************************
+money money::operator++(int not_used)
+{
+   money postfix;
+
+   postfix.dollars = dollars + 1;
+   postfix.cents   = cents;
+
+   return postfix;
+}
